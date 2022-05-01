@@ -21,7 +21,8 @@ function runTest(number) {
     }
 
     // Print Results 
-    console.log(`   Problem ${number}: Passed ${passed}/${tests.length}`)
+    const color = passed == tests.length ? '\x1b[32m' : '\x1b[33m' // Green if all tests past, else Yellow
+    console.log(`   ${color}Problem ${number}: Passed ${passed}/${tests.length}\x1b[0m`)
     
     // Output every failed test case
     for (const fail of failed) {
