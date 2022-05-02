@@ -1,5 +1,5 @@
 // Total number of problems in ./problems
-const numberOfProblems = 2
+const numberOfProblems = 12
 
 // Run a test
 function runTest(number) {

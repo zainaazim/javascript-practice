@@ -1,18 +1,25 @@
 /**
- * Problem 0: Filtering
+ * Problem 0: If statements
  * 
- * Given an array of numbers, use .filter to only return the ones that are divisible by 3
+ * Given a percentage, return the letter grade for that percentage. 
+ * (Don't worry about +/-).
  * 
- * @example [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [3, 6, 9]
- */
-function problem0(numbers) {
+ * A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: 0-59
+ * 
+ * @example 92 -> "A", 75 -> "B"
+*/
+function problem(percentage) {
     return null;
 }
 
-testCases = [
-    [[1, 2, 3, 4, 5, 6, 7, 8, 9], [3, 6, 9]],
-    [[3], [3]],
-    [[], []],
+const tests= [
+    [100, "A"],
+    [92, "A"],
+    [90, "A"],
+    [85, "B"],
+    [70, "C"],
+    [69, "D"],
+    [0, "F"]
 ]
 
-module.exports = {problem: problem0, tests: testCases};
+module.exports = {problem, tests};
