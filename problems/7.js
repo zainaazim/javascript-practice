@@ -6,7 +6,7 @@
  * 
  * @example [1, 2, 3] -> 6
 */
-function problem(str) {
+function problem(numbers) {
     return null;
 }
 
