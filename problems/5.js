@@ -1,7 +1,7 @@
 /**
  * Problem 6: Custom Sorting
  * 
- * Given a list students, sort the students by their grade.
+ * Given a list students, sort the students by their grade (descending).
  * Use the .sort function.
  * 
  * @example [{name: "Chase", grade: 89}, {name: "Raman", grade: 92}] -> [{name: "Raman", grade: 92}, {name: "Chase", grade: 89}]
