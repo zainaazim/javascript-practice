@@ -20,7 +20,7 @@ function problem(str) {
 
 const tests = [
     ["string", "g"],
-    ["arrow function", "w"]
+    ["arrow function", "n"]
 ]
 
 module.exports = {problem, tests};

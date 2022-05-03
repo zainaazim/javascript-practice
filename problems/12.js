@@ -3,7 +3,7 @@
  * 
  * Given a fruit, return the price.
  * Here are the costs for each fruit:
- *  Orange - $1, Apple - $1.29, Grapes - $1.50, Bannanas - $0.75.
+ *  Orange - $1, Apple - $1.29, Grapes - $1.50, Banana - $0.75.
  *  All other food costs $2.
  * 
  * Use a switch statement.
