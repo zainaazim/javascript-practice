@@ -7,7 +7,26 @@
  * @example "abcdef" -> "ABCdef"
 */
 function problem(str) {
-    return null;
+
+    if (str.length % 2 == 0) {
+
+        const middle = str.length / 2;
+        const first = str.slice(0,middle).toUpperCase();
+        const last = str.slice(middle, str.length).toLowerCase();
+
+        return first + last;
+
+    }
+
+    else {
+
+        const middle = Math.floor(str.length / 2);
+        let first = str.slice(0,middle).toUpperCase();
+        let last = str.slice(middle, str.length).toLowerCase();
+
+        return first + last;
+
+    }
 }
 
 const tests = [
