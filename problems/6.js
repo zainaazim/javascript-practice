@@ -7,7 +7,13 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    
+    let accumulate = 0
+    for (const element of numbers) {
+        accumulate += element;
+    }
+
+    return accumulate;
 }
 
 const tests = [
