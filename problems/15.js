@@ -11,7 +11,30 @@
  * @example 15 -> [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
 */
 function problem(number) {
-    return null;
+    
+    let my_array = [];
+    for (let x = 1; x < number+1; x++) {
+        my_array.push(x);
+    }
+
+    my_array.forEach(function(item, index, array) {
+
+        if (item % 5 === 0 && item % 3 != 0){
+            array[index] = "Buzz";
+        }
+
+        else if (item % 3 === 0 && item % 5 != 0){
+            array[index] = "Fizz";
+        }
+
+        else if (item % 3 === 0 && item % 5 === 0){
+            array[index] = "FizzBuzz";
+        }
+       
+    });
+
+    return my_array;
+
 }
 
 const tests = [
