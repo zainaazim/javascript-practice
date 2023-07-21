@@ -7,7 +7,12 @@
  * @example [3,2,3] -> 3
 */
 function problem(numbers) {
-    return null;
+    
+    const mid_val = Math.floor(numbers.length/2);
+    const sorted = numbers.sort();
+    const majority_num = sorted[mid_val]
+
+    return majority_num;
 }
 
 const tests = [
