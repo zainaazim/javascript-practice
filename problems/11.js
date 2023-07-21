@@ -8,7 +8,68 @@
  * @example "racecar" -> true
 */
 function problem(str) {
-    return null;
+
+
+    
+    let without_space = " ";
+
+    for (const element of str) {
+        if (element != " "){
+            without_space += element;
+        }
+
+    without_space = without_space.toLowerCase();
+
+    }
+
+    let str_reversed = " ";
+
+    for (let x = without_space.length; x > 0; x--) {
+        str_reversed += without_space[x];
+    }
+
+    return str_reversed;
+
+   /* if (without_space === str_reversed){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+    /*
+    if (without_space.length % 2 == 0) {
+
+        const middle = str.length / 2;
+        const first = str.slice(0,middle);
+        const last = str.slice(middle, str.length);
+
+        let last_reversed = ""
+
+        for (let x = last.length; x > 0; x--) {
+            last_reversed += last[x];
+        }
+
+        return last_reversed;
+
+    }
+
+    else {
+
+        const middle = Math.floor(str.length / 2);
+        let first = str.slice(0,middle);
+        let last = str.slice(middle, str.length);
+
+        let last_reversed = ""
+
+        for (let x = last.length; x > 0; x--) {
+            last_reversed += last[x];
+        }
+
+        return last_reversed;
+
+    }
+    */
 }
 
 const tests = [
